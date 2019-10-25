@@ -50,7 +50,7 @@ There may exist some variance while performing cluster. To achieve similar resul
 
 ## Citation
 
-If you find our work is helpful for your research, please cite the following paper. Feel free to contact me if there are any questions.
+If you find our work is helpful for your research, please cite the following paper.
 
 ```bibtex
 @inproceedings{wan2019transductive,
@@ -60,4 +60,9 @@ booktitle={Thirty-third Conference on Neural Information Processing Systems (Neu
 year={2019}
 }
 ```
-    
+## Acknowledgement
+
+Some parts of the code are borrowed from [DGP](https://github.com/cyvius96/DGP).
+
+## Contact
+Feel free to contact me if there are any questions: ziyuwan2-c@my.cityu.edu.hk

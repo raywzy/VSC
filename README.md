@@ -3,7 +3,7 @@
 This is the offical implementation of our paper [Transductive Zero-Shot Learning with Visual Structure Constraint (NeurIPS 2019)] using PyTorch.
 
 
-### Requirements
+## Requirements
 ```
 Python 3.6.3
 Pytorch 0.4.1
@@ -13,7 +13,7 @@ Scipy 1.2.1
 All experiments are conducted on single TITAN XP.
 
 
-### Running
+## Running
 
 1. (Optional) Finetune the pretrained model on the training dataset. This is useful for fine-grained dataset such as CUB since ImageNet is a general dataset:
     
@@ -43,12 +43,12 @@ All experiments are conducted on single TITAN XP.
     python Eval_Model.py --GPU [Your device information] --dataset [AwA|...] --split_mode [standard_split|proposed_split] --checkpoint_fn [The saving dir]
     ```
 
-#### Notice: 
+### Notice: 
 For CDVSc and BMVSc, please cross-validate the parameter according to the paper. For WDVSc, you could set lamda to 0.001 directly.
 There may exist some variance while performing cluster. To achieve similar results with original paper, we suggest to use [our cluster](https://drive.google.com/open?id=1tpXoPS8KMgsVgDVW0x_rC19s9L7ExMqv) results directly.       
 
 
-### Citation
+## Citation
 
 If you find our work is helpful for your research, please cite the following paper. Feel free to contact me if there are any questions.
 

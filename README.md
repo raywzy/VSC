@@ -45,12 +45,12 @@ All experiments are conducted on single TITAN XP.
 
 #### Notice: 
 For CDVSc and BMVSc, please cross-validate the parameter according to the paper. For WDVSc, you could set lamda to 0.001 directly.
-There may exist some variance while performing cluster. To achieve similar results with original paper, you could also use our cluster results directly.       
+There may exist some variance while performing cluster. To achieve similar results with original paper, we suggest to use [our cluster](https://drive.google.com/open?id=1tpXoPS8KMgsVgDVW0x_rC19s9L7ExMqv) results directly.       
 
 
 ### Citation
 
-If you find our work is helpful for your research, please cite the following paper :D
+If you find our work is helpful for your research, please cite the following paper. Feel free to contact me if there are any questions.
 
 ```bibtex
 @inproceedings{wan2019transductive,

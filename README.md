@@ -13,7 +13,7 @@ Scipy 1.2.1
 All expeiments are conducted on single TITAN XP.
 
 
-### Runing
+### Running
 
 1. (Optional) Finetune the pretrained model on the training dataset. This is useful for fine-grained dataset such as CUB since ImageNet is a general dataset:
     
@@ -44,6 +44,7 @@ All expeiments are conducted on single TITAN XP.
     ```
 
 #### Notice: 
+For CDVSc and BMVSc, please cross-validate the parameter according to the paper. For WDVSc, you could set lamda to 0.001 directly.
 There may exist some variance while performing cluster. To achieve similar results with original paper, you could also use our cluster results directly.       
 
 

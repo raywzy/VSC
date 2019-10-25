@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e7c23b7f-5631-4220-9c3c-ce9c55470f3b" name="SZU" url="http://vcc.tech">
+        <fileTransfer host="vcc.tech" port="2019" rootFolder="/home/ziyu" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="2019" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

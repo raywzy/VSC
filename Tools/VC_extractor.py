@@ -1,4 +1,4 @@
-### 通过train的类别去文件夹里找相应特征向量，求mean之后Normalize
+### For each dataset, find the feature matrix of each class, then calculate the mean (Visual Center), finally normalize.
 
 import torch
 import os
@@ -21,7 +21,7 @@ if __name__=='__main__':
     parser.add_argument('--data_dir',type=str,default='',help='root of corresponding dataset')
     parser.add_argument('--feature_name',type=str,default='ResNet101_SS.json',help='[ResNet101_SS.json|ResNet101_PS.json]')
     parser.add_argument('--dataset_name',type=str,default='CUB')
-    parser.add_argument('--mode',type=str,default='SS',help='[SS|PS]')
+    parser.add_argument('--mode',type=str,default='SS',help='SS|PS')
     opts=parser.parse_args()
 
 
@@ -35,12 +35,12 @@ if __name__=='__main__':
     #test_class_fn=os.path.join(root,"zsl_data","standard_split","AWA2","testclasses.txt")
     #target_class_fn=os.path.join(root,"zsl_data","standard_split","AWA1","trainvalclasses.txt")
     #test_class_fn=os.path.join(root,"zsl_data","standard_split","AWA1","testclasses.txt")
-    target_class_fn=os.path.join(opts.train_class_list)
-    test_class_fn=os.path.join(opts.test_class_list)
     #target_class_fn=os.path.join(root,"zsl_data","standard_split","SUN","trainvalclasses.txt")
     #test_class_fn=os.path.join(root,"zsl_data","standard_split","SUN","testclasses.txt")
     #target_class_fn="/home/ziyu/zsl_data/SUN/SUN10_train.txt"
     #test_class_fn="/home/ziyu/zsl_data/SUN/SUN10_test.txt"
+    target_class_fn=os.path.join(opts.train_class_list)
+    test_class_fn=os.path.join(opts.test_class_list)
 
     with open(target_class_fn, "r") as f:
         for lines in f:

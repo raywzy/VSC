@@ -21,24 +21,6 @@ from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 
-# root="/home/ziyu" ## used for server
-# device=torch.device("cuda:3")
-#
-# ResNet= model.resnet101(pretrained=True)
-# x = ResNet.fc.in_features
-# ResNet.fc = nn.Linear(x, 150)
-# ResNet.load_state_dict(torch.load("/home/ziyu/DNN_RC/Tools/CUB_FT_SS_101_22.pkl"))
-# ResNet=nn.Sequential(*list(ResNet.children())[:-1])
-# ResNet = ResNet.to(device)
-# ResNet.eval()
-#
-# all_class = []
-# all_class_fn = os.path.join(root, "zsl_data", "standard_split", "CUB", "allclasses.txt")
-# with open(all_class_fn, "r") as f:
-#     for lines in f:
-#         line = lines.strip().split()
-#         all_class.append(line[0])
-
 
 def loader(path):
     return Image.open(path).convert('RGB')
@@ -59,7 +41,7 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('--data_dir',type=str,default='',help='root of dataset')
     parser.add_argument('--pretrain_model',type=str,default='',help='Use pretrained model to extract features')
-    parser.add_argument('--mode',type=str,default='SS',help='Split Mode [SS|PS]')
+    parser.add_argument('--mode',type=str,default='SS',help='SS|PS')
     parser.add_argument('--gpu_id',type=int,default=0, help='Single GPU')
     opts=parser.parse_args()
 

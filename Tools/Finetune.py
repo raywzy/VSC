@@ -29,11 +29,6 @@ def get_ResNet(device):
     ResNet=ResNet.to(device)
     return ResNet
 
-def get_VGG(device):
-    VGG19 = models.vgg19_bn(pretrained=True)
-    VGG19.classifier[6]=nn.Linear(4096,150)
-    VGG19=VGG19.to(device)
-    return VGG19
 
 class ImageFolder(Dataset):
     def __init__(self,imgs,transform=None,loader=default_loader):

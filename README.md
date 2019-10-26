@@ -9,6 +9,7 @@ Python 3.6.3
 Pytorch 0.4.1
 CUDA 8.0.61
 Scipy 1.2.1
+Scikit-learn 0.20.3
 ```
 All experiments are conducted on single TITAN XP.
 
